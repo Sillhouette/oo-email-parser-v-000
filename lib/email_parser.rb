@@ -13,6 +13,6 @@ class EmailParser
 
   def parse
     seperated_emails = @emails.split(/[ ,]/)
-    seperated_emails.uniq ? seperated_emails.compact : seperated_emails.uniq!.compact
+    unique_emails = seperated_emails.uniq
   end
 end
