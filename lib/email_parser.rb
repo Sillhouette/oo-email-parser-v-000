@@ -14,7 +14,7 @@ class EmailParser
   def parse
     seperated_emails = @emails.split(/[ ,]/)
     unique_emails = []
-    seperated_emails.detect {|email| unique_emails.include?(email)}
+    seperated_emails.map {|email| unique_emails.include?(email)}
     unique_emails
   end
 end
