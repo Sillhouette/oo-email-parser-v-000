@@ -15,7 +15,7 @@ class EmailParser
     seperated_emails = @emails.split(/[ ,]/)
     #puts seperated_emails
     unique_emails = []
-    seperated_emails.map {|email| if unique_emails.include?(email) email}
+    seperated_emails.map {|email| if unique_emails.include?(email) email end}
     unique_emails
     #unique_emails.reject { |e| e.to_s.empty? }
     #seperated_emails.map {|email| unique_emails.include?(email)}
